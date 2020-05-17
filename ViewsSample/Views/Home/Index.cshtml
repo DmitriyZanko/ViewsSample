@@ -1,0 +1,30 @@
+﻿@using ViewsSample.Controllers
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Hello Team</h2>
+<div>
+    My counter is: @((ViewData["my_data"] as Data).Counter)
+    My second counter is: @ViewBag.Counter
+    User name is @ViewBag.UserName2
+    My third counter is :@((TempData["my_data"] as Data).Counter)
+</div>
+
+<div>
+    @Html.Partial("Banner")
+</div>
+<div>
+    @Html.Partial("Banner")
+</div>
+<div>
+    @Html.Partial("Banner")
+</div>
+<div>
+    @Html.Partial("Banner")
+</div>
+<div>
+    @Html.Partial("Banner")
+</div>
+
